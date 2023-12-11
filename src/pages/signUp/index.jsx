@@ -43,7 +43,7 @@ function SignUp() {
         <h4 className="font-medium text-2xl md:text-4xl lg:text-[40px] xl:text-[48px] text-gray-07">
           Sign up
         </h4>
-        <p className="font-semibold text-[14px] sm:text-[16px] leading-[26px] text-gray-04">
+        <p className="font-semibold text-[12px] sm:text-[16px] leading-[26px] text-gray-04">
           Already have an account?{" "}
           <Link to={"/"} className="text-sec-green cursor-pointer">
             Sign in

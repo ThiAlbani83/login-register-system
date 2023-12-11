@@ -43,10 +43,10 @@ const SignIn = () => {
        <h4 className="absolute top-5 uppercase">3legant</h4>
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-6 px-10 flex-auto">
-        <h4 className="font-medium text-2xl md:text-4xl lg:text-[40px] xl:text-[48px] text-gray-07">
+        <h4 className="font-medium text-xl md:text-3xl lg:text-[40px] xl:text-[48px] text-gray-07">
           Sign In
         </h4>
-        <p className="font-semibold text-[14px] sm:text-[16px] leading-[26px] text-gray-04">
+        <p className="font-semibold text-[12px] sm:text-[16px] leading-[26px] text-gray-04">
           Still not have an account?
           <Link to={"/signup"} className="text-sec-green cursor-pointer ml-2">
             Sign up
