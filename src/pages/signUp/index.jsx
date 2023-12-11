@@ -35,17 +35,19 @@ function SignUp() {
   };
 
   return (
-    <div className="flex gap-[98px] items-center w-full">
-      <div className="w-[736px] h-screen overflow-hidden">
-        <img src={"/login-signup.png"} alt="login_banner" className="" />
+    <div className="flex flex-col md:flex-row w-full h-full md:h-screen items-center justify-center gap-5 py-5 px-5">
+      <div className="flex justify-center items-center rounded-xl relative bg-[url('/login-signup.png')] w-full h-[340px] lg:h-full bg-cover bg-no-repeat bg-center">
+        <h4 className="absolute top-5 uppercase">3legant</h4>
       </div>
-      <div className="flex flex-col items-center gap-6">
-        <h4 className="font-medium text-[40px] leading-[44px] text-gray-07">
+      <div className="flex w-full h-full flex-col items-center justify-center gap-6 px-10 flex-auto">
+        <h4 className="font-medium text-2xl md:text-4xl lg:text-[40px] xl:text-[48px] text-gray-07">
           Sign up
         </h4>
-        <p className="font-semibold text-[16px] leading-[26px] text-gray-04">
+        <p className="font-semibold text-[14px] sm:text-[16px] leading-[26px] text-gray-04">
           Already have an account?{" "}
-          <Link to={"/"} className="text-sec-green cursor-pointer">Sign in</Link>
+          <Link to={"/"} className="text-sec-green cursor-pointer">
+            Sign in
+          </Link>
         </p>
         <input
           type="text"
@@ -53,34 +55,34 @@ function SignUp() {
           onChange={(e) => setName(e.target.value)}
           placeholder="Your name"
           required={true}
-          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-[480px]"
+          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-full max-w-[480px]"
         />
         <input
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail"
-          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-[480px]"
+          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-full max-w-[480px]"
         />
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
-          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-[480px]"
+          className="text-base leading-[26px] text-gray-04 outline-none pb-2 border-b w-full max-w-[480px]"
         />
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-start sm:items-center w-full max-w-[480px]">
           <input
             type="checkbox"
             className="w-6 h-6"
             onClick={handleClickPrivacy}
             defaultChecked={isPrivacyChecked}
           />
-          <p className="font-semibold text-[16px] leading-[26px] text-gray-04">
+          <p className="font-semibold text-[12px] sm:text-[16px] leading-[26px] text-gray-04">
             I agree with{" "}
             <span className="font-semibold text-gray-07 cursor-pointer">
-              Privacy Policy
-            </span>{" "}
+              Privacy Policy{" "}
+            </span>
             and{" "}
             <span className="font-semibold text-gray-07 cursor-pointer">
               Terms of Use
@@ -88,7 +90,7 @@ function SignUp() {
           </p>
         </div>
         <button
-          className="w-[480px] bg-gray-07 text-white py-3 rounded-lg disabled:bg-gray-07/25"
+          className="w-full max-w-[480px] bg-gray-07 text-white py-3 rounded-lg disabled:bg-gray-07/25"
           onClick={register}
           disabled={!isPrivacyChecked}
         >
