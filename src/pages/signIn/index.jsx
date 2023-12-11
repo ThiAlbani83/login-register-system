@@ -38,7 +38,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen items-center justify-center gap-5 py-5 px-5">
+    <div className="flex flex-col md:flex-row w-full h-full md:h-screen items-center justify-center gap-5 py-5 px-5">
       <div className="flex justify-center items-center rounded-xl relative bg-[url('/login-signup.png')] w-full h-full bg-cover bg-no-repeat bg-center">
        <h4 className="absolute top-5 uppercase">3legant</h4>
       </div>
